@@ -1,0 +1,235 @@
+.backgroundImage {
+    filter: blur(10px);
+    background-image: url("../img/background/background_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.darkOverlay {
+    filter: blur(0px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.navBar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #333333;
+    font-family: monospace;
+}
+
+.navBar ul {
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navBar ul li {
+    height: 100%;
+    display: flex;
+    float: left;
+}
+
+.navBar ul li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+
+.navBar ul li img {
+    width: 100px;
+    height: 100%;
+}
+
+.navBar ul li a:hover {
+    background-color: #2596be;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+.page {
+    display: block;
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+.header2Container {
+    padding: 10px;
+    display: flex;
+    color: azure;
+    font-family: monospace;
+}
+
+.header2Container h {
+    text-align: center;
+    display: block;
+    margin: 0;
+}
+
+.header2Container table {
+    border-color: #2596be;
+    border-width: 3px;
+    border-style: solid;
+    width: 100%;
+    border-spacing: 10px;
+}
+
+.header2Container table tr td {
+    text-align: center;
+}
+
+.header2Container table tr td h1 {
+    margin: 0;
+}
+
+.paragraphContainer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: azure;
+    font-family: monospace;
+    text-align: justify;
+}
+
+.paragraphContainer table {
+    border-spacing: 10px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.paragraphContainer table tr {
+    vertical-align: top;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.paragraphContainer table tr td {
+    padding: 10px;
+}
+
+.paragraphContainer table tr th {
+    padding: 10px;
+}
+
+.paragraphContainer table tr td h3 {
+    color: #2596be;
+    text-align: center;
+}
+
+.paragraphContainer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.textYellow {
+    color: yellow;
+    display: inline;
+}
+
+.textBlue {
+    color: #2596be;
+    display: inline;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/*=================================CLICKABLE ELEMENTS=================================*/
+.clickable {
+    cursor: pointer;
+}
+
+.clickable-image {
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.clickable-image:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hovered-image {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hovered-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*=================================SCROLLBAR=================================*/
+.visible-scrollbar,
+.invisible-scrollbar,
+.mostly-customized-scrollbar {
+    display: block;
+    width: 10em;
+    overflow: auto;
+    height: 2em;
+    padding: 1em;
+    margin: 1em auto;
+    outline: 2px dashed cornflowerblue;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Demonstrate a "mostly customized" scrollbar
+ * (won't be visible otherwise if width/height is specified) */
+.mostly-customized-scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;
+    /* or add it to the track */
+}
+
+/* Add a thumb */
+.mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+    background: #000;
+}
